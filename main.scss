@@ -1,0 +1,38 @@
+$black: #2B2A28;
+$squareWidth: 30px;
+$sqPerRow: 20;
+
+html, body {
+  background-color: $black;
+  color: white;
+}
+
+.container {
+  width: min-content;
+  margin: 0 auto;
+}
+
+header {
+  text-align: center;
+}
+
+#score {
+  text-align: left;
+}
+
+// grid
+.grid {
+  border: 5px solid white;
+  width: calc(#{$squareWidth} * #{$sqPerRow});
+}
+// clearfix
+.grid:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.square {
+  width: $squareWidth;
+  height: $squareWidth;
+  float: left;
+}

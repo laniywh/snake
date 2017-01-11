@@ -1,0 +1,29 @@
+html, body {
+  background-color: #2B2A28;
+  color: white; }
+
+.container {
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
+  margin: 0 auto; }
+
+header {
+  text-align: center; }
+
+#score {
+  text-align: left; }
+
+.grid {
+  border: 5px solid white;
+  width: calc(30px * 20); }
+
+.grid:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+.square {
+  width: 30px;
+  height: 30px;
+  float: left; }
